@@ -134,11 +134,11 @@
 #if __has_attribute(__always_inline__)
 #define SER20_FORCE_INLINE __attribute__((__always_inline__))
 #else
-#ifdef _MSC_VER
-#define SER20_FORCE_INLINE __forceinline
-#else 
+// #ifdef _MSC_VER
+// #define SER20_FORCE_INLINE __forceinline
+// #else 
 #define SER20_FORCE_INLINE
-#endif
+// #endif
 #endif
 
 #ifndef SER20_HIDE_FUNCTION
